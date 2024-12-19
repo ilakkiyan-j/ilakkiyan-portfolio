@@ -8,8 +8,7 @@ function About() {
     const tracks = [
         { title: "Software Development", url: "tracks/software.jpg" },
         { title: "Full Stack Development", url: "tracks/web.jpg" },
-        { title: "UI/UX Design", url: "tracks/ui.png" },
-        { title: "Data Analytics", url: "tracks/data.webp" },
+        { title: "UI/UX Design", url: "tracks/ui.png" }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,13 +27,13 @@ function About() {
     };
 
     const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + tracks.length) % tracks.length);
+        setCurrentIndex((prevIndex) => (prevIndex - 1) % tracks.length);
     };
 
     useEffect(() => {
-        const interval = setInterval(nextSlide, 3000); // Auto slide
-        return () => clearInterval(interval);
-    }, []); // Runs once
+        const interval = setInterval(nextSlide, 3000); // Auto slide every 3 seconds
+        return () => clearInterval(interval); // Clean up on unmount
+    }, []); // Runs only once on mount
 
     return (
         <div className="about" id="about">
@@ -62,8 +61,7 @@ function About() {
                         );
                     })}
                 </div>
-                <button onClick={prevSlide}><ArrowBackIosIcon className="arrow-pre"/></button>
-                <button onClick={nextSlide}><ArrowForwardIosIcon /></button>
+
             </div>
         </div>
     );

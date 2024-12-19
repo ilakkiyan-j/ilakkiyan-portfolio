@@ -20,8 +20,6 @@ var skillSet = [
     {heading: "Python", uri: "python.svg", type: "software" },
     { heading: "Figma", uri: "figma.svg", type: "ui/ux" },
     { heading: "Canva", uri: "canva.svg", type: "ui/ux" },
-    { heading: "Spreadsheets", uri: "spreadsheets.svg", type: "data" },
-    { heading: "Tableau", uri: "tableau.svg", type: "data" },
 ];
 
 
