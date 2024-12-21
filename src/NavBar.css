@@ -16,12 +16,12 @@ header div:first-child {
     color: white; 
 }
 
-header div nav {
+header nav {
     display: flex;
     gap: 25px; 
 }
 
-header div nav ul {
+header nav ul {
     list-style: none; 
     display: inline; 
     margin: 0;
@@ -35,11 +35,61 @@ header div nav ul {
     font-weight: 300;
 }
 
-header div nav ul:hover {
+header nav ul:hover {
     color: #C8E6FF;
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif; 
+}
+
+.nav-toggle {
+    display: none; 
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    right: -200px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 2rem;
+    } 
+
+    .nav-toggle {
+        display: block;
+    }
+    
+    nav {
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #041118d9;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 10;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+   
+    nav.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    nav ul {
+        margin: 10px 0;
+    }
+
+    header nav {
+        padding: 1rem;
+    }
 }

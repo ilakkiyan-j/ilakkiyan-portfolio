@@ -61,3 +61,18 @@ h6 svg {
 a{
     text-decoration: none;
 }
+
+@media (max-width: 650px) {
+
+    .home {
+        height: 300px;
+    }
+    #background-video {
+        height: 400px;
+    }
+    .name {
+        font-size: 3rem;
+        margin-top: 7rem;
+        margin-left: 2rem;
+    }
+}

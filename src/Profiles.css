@@ -59,4 +59,38 @@ a{
 }
 
 
+@media (max-width: 600px) {
+    .stats-header {
+        font-size: 1.5rem;
+    }
+
+    .stats {
+        height: 100px;
+        width: 150px;
+    }
+
+    .stats-img{
+        width: 35px;
+        height: 40px;
+    }
+
+    .stats p{
+        font-size: 1rem;
+    }
+
+    .stats-container {
+        height: 250px;
+        
+    }
+     
+    .stats:hover{
+        transform: scale(1.0);
+    
+    }
+    .stats-wrapper {
+        
+    }
+
+}
+
 

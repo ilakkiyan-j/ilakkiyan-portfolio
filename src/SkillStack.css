@@ -38,7 +38,7 @@
     padding-left: 250px;
     padding-right: 250px;
     display: flex;
-    flex-direction: column; /* Ensure this stacks the items vertically */
+    flex-direction: column; 
     color: aliceblue;
     text-align: center;
     padding-bottom: 20px;
@@ -54,11 +54,48 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items in the row */
-    gap: 1rem; /* Simplify to 'gap' property for both row and column gaps */
+    justify-content: center; 
+    gap: 1rem; 
     color:aliceblue;
     height: fit-content;
     text-align: center;
-    width: 100%; /* Ensure it takes full width */
+    width: 100%; 
 }
 
+
+@media (max-width: 600px) {
+    
+    .SkillStack {
+        padding-left: 20px; 
+        padding-right: 20px;
+        padding-bottom: 10px; 
+    }
+
+    .SkillStack h1 {
+        font-size: 3vh;
+    }
+
+    
+    .Skill {
+        width: 100px; 
+        height: 70px; 
+        gap: 5px; 
+        border-radius: 10px; 
+    }
+
+    .Skill:hover {
+        transform: scale(1.0); 
+    }
+
+    .img {
+        width: 30px; 
+        height: 30px;
+    }
+
+    
+    .skillset {
+        gap: 0.5rem; 
+        padding: 0; 
+        flex-wrap: wrap; 
+    }
+}

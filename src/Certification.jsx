@@ -92,68 +92,73 @@ export default function Certification() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
+const handlePrev = () => {
+  if (currentIndex > 0) {
+    setCurrentIndex(currentIndex - 1);
+  }
+};
 
-  const handleNext = () => {
+const handleNext = () => {
+  if (currentIndex < certificates.length - 1) {
+    setCurrentIndex(currentIndex + 1);
+  }
+};
+
+useEffect(() => {
+  const interval = setInterval(() => {
     if (currentIndex < certificates.length - 1) {
       setCurrentIndex(currentIndex + 1);
+    } else {
+      setCurrentIndex(0); 
     }
-  };
+  }, 5000);
+  return () => clearInterval(interval); 
+}, [currentIndex, certificates.length]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (currentIndex < certificates.length - 1) {
-        setCurrentIndex(currentIndex + 1);
-      } else {
-        setCurrentIndex(0); 
-      }
-    }, 5000);
-    return () => clearInterval(interval); 
-  }, [currentIndex, certificates.length]);
+// Check the window width dynamically
+const isMobile = window.innerWidth <= 600;
 
-  return (
-    <div className="certification-section" id="certificate">
-      <div className="heading">
-        <h1>Certifications</h1>
-      </div>
-      <button
-          className="scroll-button left"
-          onClick={handlePrev}
-          disabled={currentIndex === 0}
-        >
-          &#8249;
-        </button>
-      <div className="certification-carousel">
-        <div
-          className="certification-container"
-          style={{
-            transform: `translateX(-${currentIndex * 1200}px)`
-          }}
-        >
-          {certificates.map((cert, index) => (
-            <Certificate
-              key={index}
-              name={cert.name}
-              provider={cert.provider}
-              date={cert.date}
-              url={cert.url}
-              link={cert.link}
-            />
-          ))}
-        </div>
-
-      </div>
-              <button
-          className="scroll-button right"
-          onClick={handleNext}
-          disabled={currentIndex === certificates.length - 1}
-        >
-          &#8250;
-        </button>
+return (
+  <div className="certification-section" id="certificate">
+    <div className="heading">
+      <h1>Certifications</h1>
     </div>
-  );
+    <button
+        className="scroll-button left"
+        onClick={handlePrev}
+        disabled={currentIndex === 0}
+      >
+        &#8249;
+    </button>
+    <div className="certification-carousel">
+      <div
+        className="certification-container"
+        style={{
+          transform: isMobile
+            ? `translateX(-${currentIndex * (300 + 10)}px)` // Apply gap only for mobile
+            : 'translateX(0)' // Default behavior for larger screens
+        }}
+      >
+        {certificates.map((cert, index) => (
+          <Certificate
+            key={index}
+            name={cert.name}
+            provider={cert.provider}
+            date={cert.date}
+            url={cert.url}
+            link={cert.link}
+          />
+        ))}
+      </div>
+    </div>
+    <button
+        className="scroll-button right"
+        onClick={handleNext}
+        disabled={currentIndex === certificates.length - 1}
+      >
+        &#8250;
+    </button>
+  </div>
+);
+  
 }
