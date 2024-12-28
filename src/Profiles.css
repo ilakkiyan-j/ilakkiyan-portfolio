@@ -87,10 +87,36 @@ a{
         transform: scale(1.0);
     
     }
-    .stats-wrapper {
-        
-    }
 
 }
 
+@media (max-width: 480px) {
+    .stats-header {
+        font-size: 1.2rem;
+    }
+    .stats {
+        height: 50px;
+        width: 200px;
+        flex-direction: row;
+         gap:10%;
+        align-items: center;
+        
+    }
 
+    .stats-wrapper {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+    .stats p{
+        font-size: small;
+    }
+    
+    .stats-img{
+        width: 30px;
+        height: 30px;
+        margin-left: 10%;
+       margin-bottom: 10px;
+    }
+    
+}

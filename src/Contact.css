@@ -90,3 +90,16 @@
     transform: rotate(10deg); /* Adjust the angle as needed */
     transform-origin: center; /* Rotate around the center */
 }
+
+@media (max-width: 480px) {
+    .contact-buttons {
+    width: 250px;
+    }
+    .contact-buttons::after,.contact-buttons::before{
+        width: 300px;
+    }
+    .contact-section h1{
+        font-size: 1.3rem;
+        padding-bottom: 4.7%;
+    
+}

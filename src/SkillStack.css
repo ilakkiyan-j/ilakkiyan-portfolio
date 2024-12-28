@@ -99,3 +99,21 @@
         flex-wrap: wrap; 
     }
 }
+
+@media (max-width: 480px) {
+    
+    .img {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .Skill {
+        width: 70px; 
+        height: 60px; 
+        gap: 5px; 
+        border-radius: 10px; 
+    }
+    span {
+        font-size: 11px;
+    }
+}

@@ -260,3 +260,42 @@ a{
         background: rgba(255, 255, 255, 0.6);
     }
 }
+
+@media (max-width: 480px) {
+
+    .head {
+        margin-bottom: 100%;
+    }
+    .github {
+        top: 100%;
+        left: 30%;
+    }
+
+    .project-container {
+        margin-top: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 300px;
+        overflow-y: scroll; /* Allows vertical scrolling */
+        width: 100%; /* Ensures the container does not exceed screen width */
+        scrollbar-width: thin;
+    }
+    
+    .project {
+        height: 500px;
+    }
+    
+    .description p {
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+
+    .Title h2  span{
+        font-size: 0.3rem;
+    }
+
+    .Title{
+        flex-direction: column;
+    }
+}
