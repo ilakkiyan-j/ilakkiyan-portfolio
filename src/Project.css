@@ -184,7 +184,7 @@ a{
     }
 
     .head h1 {
-        font-size: 3vh;
+        font-size: 1.5rem;
         text-align: left;
         padding-left: 3rem;
         margin-top: 20px;
@@ -265,6 +265,10 @@ a{
 
     .head {
         margin-bottom: 100%;
+    }
+    .head h1{
+        margin-left: 23%;
+
     }
     .github {
         top: 100%;

@@ -245,16 +245,18 @@ button:hover {
     
     .tracks-container{
         max-width: 100%;
-        padding-left: 10%;
+        padding-right: 30%;
     }
     .tracks-container h3 {
         font-size: 1.2rem;
         justify-content:center;
-        padding-left: 5%;
+        margin-left: 40%;
     }
 
     .tracks{
         flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
         padding: 0%;
         padding-left: 30%;
     }
