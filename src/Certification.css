@@ -188,116 +188,6 @@
     cursor: not-allowed;
   }
   
-  @media (max-width: 600px) {
-    .certification-section {
-        height: auto;
-        padding: 10px;
-    }
-
-    .heading h1 {
-        font-size: 3vh;
-        text-align: center;
-    }
-
-    .certification-carousel {
-        width: 100%; /* Full width for carousel */
-        max-width: 100%;
-        overflow: hidden; /* Hide anything that overflows */
-        position: relative;
-    }
-
-    .certification-container {
-        display: flex;
-        transition: transform 0.5s ease; /* Smooth transition for sliding */
-        width: auto; /* Ensure the container adjusts based on total width of items */
-    }
-
-    .Certificate {
-        width: 300px; /* Fixed width for each certificate */
-        height: auto;
-        flex-direction: column;
-        justify-content: center;
-        flex-shrink: 0; /* Prevent shrinking */
-        margin-right: 10px; /* Add gap between certificates */
-        padding: 10px;
-    }
-
-    .img-container {
-        width: 250px;
-        height: auto;
-        flex: 0 0 50%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .certificate-img {
-        width: 250px;
-        height: auto;
-        object-fit: contain;
-        margin: 0 auto;
-    }
-
-    .description-container {
-        width: 100%;
-        margin-right: 0;
-        padding-top: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center the content horizontally */
-    }
-
-    .description-container h1 {
-        font-size: 1rem;
-    }
-
-    .description-container h6 {
-        font-size: 0.8rem;
-    }
-
-    .description-container span {
-        font-size: 0.7rem;
-    }
-
-    .view-button {
-        font-size: 0.8rem;
-        padding: 8px 16px;
-        width: auto;
-        margin-top: 10px; /* Add space between the description and button */
-    }
-
-    .scroll-button {
-        font-size: 1.2rem;
-        width: 75px;
-        height: 75px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5); /* Add background for visibility */
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-
-    .scroll-button.left {
-        left: 10px;
-    }
-
-    .scroll-button.right {
-        right: 10px;
-    }
-
-    .view-button {
-       
-        height: 25px;
-        width: 100px;
-        padding: 5px;
-    }
-
-    .view-button span {
-       margin-top: -2px;
-        font-size: 10px;
-    }
-}
 
 @media (max-width: 480px) {
   .certification-section {
@@ -333,9 +223,9 @@
       height: auto;
       flex-direction: column;
       justify-content: center;
-      flex-shrink: 0; /* Prevent shrinking */
-      margin-right: 10px; /* Add gap between certificates */
-      margin-left: 0; /* Ensure no margin on the left of the first card */
+      flex-shrink: 0; 
+      margin-right: 10px; 
+      margin-left: 0; 
       padding: 10px;
   }
 

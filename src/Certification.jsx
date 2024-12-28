@@ -92,8 +92,7 @@ export default function Certification() {
 
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardWidth = 300; // Fixed width of each card
-  const gap = 10; // Gap between cards
+
 
   const handlePrev = () => {
     if (currentIndex > 0) {
