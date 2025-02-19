@@ -5,8 +5,8 @@ import "./SkillStack.css";
 function Profiles() {
     const profs = [
       
-        { url: "stats/codechef.svg", title:"CodeChef" ,link:"https://www.codechef.com/users/ilakkiyanj03"},
-        { url: "stats/leetcode.svg" , title:"LeetCode",link:"https://leetcode.com/u/ilakkiyanj/"},
+        { url: "stats/codechef.svg", title:"CodeChef" ,link:"https://www.codechef.com/users/ilakkiyan_j"},
+        { url: "stats/leetcode.svg" , title:"LeetCode",link:"https://leetcode.com/u/ilakkiyan-j/"},
         { url: "stats/gfg.svg" , title:"Geeks for Geeks",link:"https://www.geeksforgeeks.org/user/ilakkiyanj03/"}
       
     ];
