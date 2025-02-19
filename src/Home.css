@@ -69,6 +69,7 @@ a{
     }
     #background-video {
         height: 400px;
+        width: fit-content;
     }
     .name {
         font-size: 3rem;
@@ -92,6 +93,7 @@ a{
     }
     #background-video {
        height: 300px;
+       width: fit-content;
     }
    h6{
     font-size: 0.7rem;
