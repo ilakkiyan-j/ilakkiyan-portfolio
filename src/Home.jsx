@@ -12,7 +12,7 @@ function Home() {
             </video>
             <h1 className="name">Ilakkiyan J</h1>
             
-            <a className="resume" href="https://drivehttps://drive.google.com/file/d/1EmgCaH_k8K-1ByezldZgo_MSxET3afy2/view?usp=sharing" target='__blank'>  
+            <a className="resume" href="https://drive.google.com/file/d/1EmgCaH_k8K-1ByezldZgo_MSxET3afy2/view?usp=sharing" target='__blank'>  
             <h6>Get My Resume{" "}
            
                 <DoubleArrowIcon fontSize="small" />
