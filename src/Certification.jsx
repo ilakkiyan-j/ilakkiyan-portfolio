@@ -68,25 +68,11 @@ export default function Certification() {
       link: "https://www.futurelearn.com/certificates/nfsfqrr",
     },
     {
-      name: "Introduction to Data Analytics",
+      name: "Meta Data Analyst",
       provider: "Coursera",
-      date: "Aug.18, 2024",
-      url: "Data_analytics",
-      link: "https://coursera.org/share/557227cd64f7111868b14f4d050739f4",
-    },
-    {
-      name: "Data Analysis with Spreadsheets and SQL",
-      provider: "Coursera",
-      date: "Sep.29, 2024",
-      url: "Data_analysis",
-      link: "https://coursera.org/share/768213b7995da686fcdb2b7362414f91",
-    },
-    {
-      name: "Introduction to Data Management",
-      provider: "Coursera",
-      date: "Nov.8, 2024",
-      url: "Data_management",
-      link: "https://coursera.org/share/7ec2ebb5764031fa5a45e2523168fc4a",
+      date: "Jan.05, 2025",
+      url: "Data_Analyst",
+      link: "https://coursera.org/share/b4e491296ae086f7d02db053b007ef13",
     },
   ];
 
