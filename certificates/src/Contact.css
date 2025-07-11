@@ -1,0 +1,92 @@
+.contact-section {
+    text-align: center;
+    height: 200px;
+    flex-direction:column;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+
+    position: relative;
+}
+
+
+
+
+.contact-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.contact-buttons {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.contact-buttons::after,.contact-buttons::before{
+   
+    content: ' ';
+    position: absolute;
+    height: 50px;
+    width: 350px;
+    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    top: 49%;
+    left:50%;
+   
+    translate: -50% -50%;
+    z-index: -1;
+   
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.contact-buttons::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from{
+      --angle:0deg;
+    }
+    to{
+      --angle:360deg;
+    }
+}
+.contact-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.contact-button .icon {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.divider {
+    height: 20px;
+    width: 1px;
+    background-color: #222222;
+    margin: 0 15px;
+    transform: rotate(10deg); /* Adjust the angle as needed */
+    transform-origin: center; /* Rotate around the center */
+}
